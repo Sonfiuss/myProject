@@ -1,0 +1,40 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Product Page";
+    var products = Model;
+    @* var categories = ViewBag.Categories; *@
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome product </h1>
+    
+    <table class="table ">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>
+                <a href="/Product/Create" class = "btn btn-primary">Create</a>
+            </th>
+        </thead>
+        <tbody>
+
+            @foreach(var product in products)
+            {
+            <tr>
+                <td>@product.ID</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Quantity</td>
+    
+                <td> 
+                    <a href="/Product/Update?id=@product.ID" class = "btn btn-success">Update</a>
+                    <a href="/Product/Delete" class = "btn btn-success">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
