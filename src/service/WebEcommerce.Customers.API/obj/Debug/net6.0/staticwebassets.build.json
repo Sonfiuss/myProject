@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RaDcyOsY4FVptk8wbGt5cJZ2iUe55CcF2fAEP+dFL9Q=",
+  "Source": "WebEcommerce.Customers.API",
+  "BasePath": "_content/WebEcommerce.Customers.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
